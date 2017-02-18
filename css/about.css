@@ -1,0 +1,53 @@
+#sidebar{
+	height:840px;
+	width:267px;	
+	float:left;
+	display:relative;
+	background:#fff url("../img/sidebar-line.png") right repeat-y;
+	padding-top:10px;
+}
+#sidebar embed{
+	display:block;
+	width:266px;
+	height:200px;
+	
+}
+ 
+ #cont{
+	height:840px;
+	width:510px;	
+	background:#fff;
+    float:left;
+	padding:10px 60px 0 30px;
+ }
+  #cont h1{
+	  background:url('../img/guanyu.jpg') no-repeat left center;
+	  text-indent:-9999px;
+	  padding-bottom:20px;
+  }
+ #cont p{
+	 text-indent:2em;
+	 line-height:160%;
+	 text-align:left;
+	 color:#666;
+	 margin-top:10px;
+ }
+ #cont p span{
+	 color:blue;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
