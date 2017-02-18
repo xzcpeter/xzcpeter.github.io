@@ -1,0 +1,67 @@
+#sidebar{
+	height:840px;
+	width:267px;	
+	float:left;
+	display:relative;
+	background:#fff url("../img/sidebar-line.png") right repeat-y;
+	padding-top:10px;
+}
+#sidebar embed{
+	display:block;
+	width:266px;
+	height:200px;
+	
+}
+ 
+ #cont{
+	height:830px;
+	width:560px;	
+	background:#fff;
+    float:left;
+	text-align:left;
+	padding:10px 20px;
+	
+ }
+
+ #cont h1{
+	 background:#fff url('../img/job.gif') no-repeat left center;
+	 text-indent:-9999px; 
+ }
+ 
+ #cont table{
+	 border-collapse:collapse;
+	 color:#999;
+	 text-align:center;
+	 height:104px;
+	 width:539px;
+	 margin-top:20px;
+ }
+ 
+  #cont th {
+	  font-weight:normal;
+	  background:#ccc;
+  }
+ 
+ #cont th, #cont td {
+	 border:1px solid #999;
+ }
+ 
+ #cont tr:hover{
+	 background:orange;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
