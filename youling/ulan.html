@@ -1,0 +1,80 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>幽灵按钮</title>
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/> 
+<script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+</head>
+     
+<body>
+<div class="warre">
+ <div class="tip">
+		      <em></em>
+			  <div></div>
+		 </div>
+	     <div class="box box-1" >
+		
+		 
+		     <div class="pic pic-1">
+			 </div>
+			 <div class="button" title="mission">
+			 <a href="#">MISSION</a>
+			 <span class="line line-top"></span>
+			 <span class="line line-right"></span>
+			 <span class="line line-bottom"></span>
+			 <span class="line line-left"></span>
+			 </div>
+	    </div>
+		<div class="box box-2" >
+		
+		     <div class="pic pic-2">
+			 </div>
+			 <div class="button" title="PLAY">
+			 <a href="#">PLAY</a>
+			 <span class="line line-top"></span>
+			 <span class="line line-right"></span>
+			 <span class="line line-bottom"></span>
+			 <span class="line line-left"></span>
+			 </div>
+	    </div>
+		<div class="box box-1" >
+		     <div class="pic pic-3">
+			 </div>
+			 <div class="button" title="mission-TOUCH">
+			     <a href="#">TOUCH</a>
+			     <span class="line line-top"></span>
+			     <span class="line line-right"></span>
+			     <span class="line line-bottom"></span>
+			     <span class="line line-left"></span>
+			 </div>	 
+	    </div>
+    </div>
+	<script>
+/*	 $(function(){
+	     $(".button").hover(function(){
+		        var title=$(this).attr("title");
+		        $(".tip em ").text(title);
+		         var pos=$(this).offset().left;
+		         var dis=($(".tip").outerWidth()-$(this).outerWidth())/2;
+		         var f =pos-dis;
+		        $(".tip").css({"left":f+"px"}).animate({"top":160,"opacity":1},300);
+		 },function(){
+		  $(".tip").animate({"top":130,"opacity":0},300)
+		   })
+	   })	*/	   
+	     $(function(){
+		    $(".button").hover(function(){
+			    var title=$(this).attr("title")
+				 $(".tip em").html(title)
+				 var pos=$(this).offset().left
+				 var dis=($(".tip").outerWidth()-$(this).outerWidth())/2
+				 var f=pos-dis
+				 $(".tip").css({"left":f+"px"}).animate({"top":150,"opacity":1},300);},
+				 function(){
+				   $(".tip").animate({"top":130,"opacity":0},300)
+			})
+		 })
+	</script>	 
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* CSS Document */
+*{marign:0; padding:0;}
+body{background-color: #CCCCCC ;}
+.warre{width:800px;height:400px; margin:0 auto;}
+.box{width:180px;height:200px;; float:left; margin:30px; position:relative;}
+.pic{width;180px; height:140px; transition: all 0.2s;  z-index:999;}
+.pic:hover{ transform: rotate(360deg) scale(1.2);}
+.button{ border:2px solid rgba(255,255,255,0.8); width:180; height:30px; text-align:left; ; line-height:30px; margin-top:25px; background:url(../imgs/icon-button-arrow.gif) no-repeat 110px center;transition: all 0.2s; position:relative; }
+a{ text-decoration:none; display:block; color:#00CC66; font-size:16px; font-family:黑体;padding-left:20px; }
+.button:hover{ background-position:130px;border:2px solid rgba(255,255,255,1);}
+.pic-1{ background: url(../imgs/icon-console.gif) no-repeat center center;}
+.pic-2{ background: url(../imgs/icon-rocket.gif) no-repeat center center;}
+.pic-3{ background: url(../imgs/icon-location.gif) no-repeat center center;}
+
+.line{ position: absolute ; background-color:#FFf; transition: all 0.2s; }
+.line-top{height:2px; width:0px; 
+       top:-2px;
+	   left:-110%;}
+ .button:hover .line-top{height:2px; width:180px; 
+       top:-2px;
+	   left:-2px;}
+.line-bottom{height:2px; width:0px; 
+       bottom:-2px;
+	   right:-110%;}
+ .button:hover .line-bottom{height:2px; width:180px; 
+       bottom:-2px;
+	   right:-2px;}	   
+.line-left{height:0px; width:2px; 
+       bottom:-310%;
+	   left:-2px;}
+ .button:hover .line-left{height:32px; width:2px; 
+       bottom:-2px;
+	   left:-2px;}	   
+line-right{height:0px; width:2px; 
+       top:-310%;
+	   right:-2px;}
+ .button:hover .line-right{height:32px; width:2px; 
+       top:-2px;
+	   right:-2px;}	
+.tip {position:absolute; opacity:0; top:130px; color:#fff; background-color:#009933; height:30px; border-radius:6px; margin:0 auto; text-align:center; z-index:1;
+line-height:30px;}	
+.tip em{padding:10px;}      
+.tip div{ width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #009933;
+	 margin:0 auto;}
+	   	   
+		   
+ 
+		  $(".tip").animate({"top":130,"opacity":0},300)
+		   })
+	   })*/		   

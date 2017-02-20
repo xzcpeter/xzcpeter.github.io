@@ -1,0 +1,57 @@
+ <! doctype html >
+<html>
+<head>
+<title>picture</title>
+<style>
+body{
+ font-family: "serif";
+ color: #333;
+ background-color: #ccc;
+ margin: 1em 20%;
+}
+h1{
+color: #333
+background-color: transparent;
+}
+a{
+color:#060;
+background-color:transparent;
+font-weight: bold;
+text-decoration:none;
+}
+ul{
+padding: 0;
+}
+li{
+ float:left;
+ padding: 1em;
+ list-style:none;
+}
+img{
+display: block;
+clear: both;
+}
+</style>
+<script>
+function showpic(whichpic){
+var source =whichpic.getAttribute("href");
+var pld =document.getElementById("pld");
+pld.setAttribute("src",source);
+var text =whichpic.getAttribute("title");
+var dcp =document.getElementById("dcp");
+dcp.firstChild.nodeValue=text;
+}
+</script>
+</head>
+<body>
+<h1>sanashots</h1>
+<ul>
+<li><a href="../imge/0.jpg" title="one2" onclick="showpic(this);return false;">one</a></li>
+<li><a href="../imge/1.jpg" title="tow3" onclick="showpic(this);return false;">tow</a></li>
+<li><a href="../imge/2.jpg" title="shro4"onclick="showpic(this);return false;">shro</a></li>
+<li><a href="../imge/3.jpg" title="for5" onclick="showpic(this);return false;">for</a></li>
+</ul>
+<img id="pld" src="" width="150px" height="180px" alt="my img"/>
+<p id="dcp">choose an image</p>
+</body>
+</html>

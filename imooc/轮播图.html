@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Document</title>
+ <style>
+     *{
+	   margin:0;
+	   padding:0;
+	   list-style:none;
+	 }
+	 #wrap{
+	   position:relative;
+	   width:400px;
+	   height:200px;
+	   overflow:hidden;
+	   margin:60px auto;
+	 }
+	 #wrap ul li{
+	   position:absolute;
+	   width:400px;
+	   height:200px;
+	 }
+	 #wrap ul li img{
+	   display:block;
+	   width:400px;
+	   height:200px;
+	 }
+	 #wrap ol  {
+	  position:absolute;
+	  bottom:10px;
+	  right:10px;  
+	 }
+	  #wrap ol li{
+	    border:1px solid #ccc;
+		margin-left:3px;
+		color:#fff;
+		
+		float:left;
+		padding:5px;
+	  }
+	  .on{background:#E97305;
+      color:#fff;}
+ </style>
+ </head>
+ <body>
+    <div id="wrap">
+	    <ul id="pic">
+		   <li><img src='images/ad2.jpg'/></li>
+		   <li><img src='images/ad3.jpg'/></li>
+		   <li><img src='images/ad4.jpg'/></li>
+		</ul>
+		<ol  id="list">
+		   <li class="on">1</li>
+		   <li>2</li>
+		   <li>3</li>
+		</ol>
+	</div >
+	<script>
+	      //实现轮播图要用到的技术。
+		  <!-- 1.利用dom的byid，bytagname获取到 容器和放置图片和数字导航栏的表情li
+		 //2.构造一个函数。需要用到的变量有外容器wrap 图片区pic 数字导航区list  计数（数组下表）index 
+		  //  定时器变量timer
+		  //3.设置定时器，
+		  //4.设置当鼠标滑过容器时，定时器停止工作，鼠标划出容器，计时器继续工作（setinterval，onmouseover，clear
+		    // interval，onmouseout）
+		  //5.遍历数字导航实现滑过切换图片(for遍历)，但鼠标在数字区，计数器停止工作，是index（数字下标）=数字导航的
+		    //文本内容（innerhtml）-1【数组下标从0开始】，执行改变图片的changepic函数
+		  //6.自动播放函数 理念=如果index的值大于数组的长度，则重置index=0；执行函数changepic
+          //7.切换图片的函数；对pic（图片的集合）进行遍历，首先使图片进行display的设置，使它隐藏，并将它的class设为空，
+           //  再将pic{curIndex}，即选到|轮到的图片display设为block，并使得它的class为on。		   -->
+		   window.onload=function(){
+		   var wrap,pic,list,index,timer;
+		       wrap=document.getElementById("wrap");
+		       pic=document.getElementById("pic").getElementsByTagName("li");
+			   list=document.getElementById("list").getElementsByTagName("li");
+			   index=0;
+			   timer=null;
+			   //定时器播放
+			   timer=setInterval(autoplay,2000)
+			   //鼠标滑过容器，计时器停止计数
+			   wrap.onmouseover=function(){
+			        clearInterval(timer)
+			   }
+			   //鼠标划出，效果继续
+			   wrap.onmouseout=function(){
+			      timer=setInterval(autoplay,2000)
+			   }
+			   
+			   //遍历数字导航实现滑过切换图片
+			   for (var i=0;i<list.length;i++){
+			     list[i].onmouseover=function(){
+				    clearInterval(timer);
+					index=this.innerText-1;
+					changepic(index);
+				 }		 
+			   }
+			   //自动播放
+			   function autoplay(){
+			     if(++index >=pic.length) index=0;
+				 changepic(index)
+			   }
+			   //定义图片切换函数
+			   function changepic(curIndex){
+			      for(var i=0;i<pic.length;i++){
+				    pic[i].style.display="none";
+					list[i].className=""
+				  }
+				  pic[curIndex].style.display="block";
+				  list[curIndex].className="on"
+			   }
+		   }
+		   
+
+	</script>
+</body>
+</html>
