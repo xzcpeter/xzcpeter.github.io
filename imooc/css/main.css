@@ -1,4 +1,4 @@
-@charset "gb2312";
+@charset "utf-8";
 /* CSS Document */
 * {
 	padding: 0;
@@ -57,7 +57,7 @@ body {
 	margin-right: 10px;
 }
 .tel {
-	font-family: "΢���ź�";
+	font-family: "Î¢ÈíÑÅºÚ";
 	font-size: 22px;
 	color: #C00;
 }
@@ -86,7 +86,7 @@ body {
 	float: left;
 	list-style-type: none;
 	width: 100px;
-	font-family: "΢���ź�";
+	font-family: "Î¢ÈíÑÅºÚ";
 	text-align: center;
 }
 .nav_mid a:link, .nav_mid a:visited {
@@ -152,7 +152,7 @@ body {
 	height: 35px;
 	border-bottom: 2px solid #E8E8E8;
 	font-size: 14px;
-	font-family: "΢���ź�";
+	font-family: "Î¢ÈíÑÅºÚ";
 	line-height: 35px;
 	font-weight: bold;
 	color: #786F66;
@@ -170,7 +170,7 @@ body {
 .title_right a {
 	color: #999;
 	text-decoration: none;
-	font-family: "����";
+	font-family: "ËÎÌå";
 	font-size: 10px;
 	font-weight: normal;
 	padding-right: 10px;
@@ -268,7 +268,7 @@ body {
 	text-align: center;
 	background: url(../images/line.png) no-repeat right center;
 	font-size: 18px;
-	font-family: "΢���ź�";
+	font-family: "Î¢ÈíÑÅºÚ";
 	line-height: 30px;
 	color: #999;
 }
@@ -324,7 +324,7 @@ body {
 	line-height: 35px;
 	padding-left: 20px;
 	font-size: 14px;
-	font-family: "΢���ź�";
+	font-family: "Î¢ÈíÑÅºÚ";
 	color: #666;
 }
 .n_main_l_content {
@@ -358,12 +358,12 @@ body {
 	background: url(../images/type_bg.png) repeat-x;
 	padding-left: 20px;
 	font-size: 14px;
-	font-family: "΢���ź�";
+	font-family: "Î¢ÈíÑÅºÚ";
 	color: #666;
 }
 .n_main_r_news_title {
 	font-size: 20px;
-	font-family: "΢���ź�";
+	font-family: "Î¢ÈíÑÅºÚ";
 	text-align: center;
 	margin: 10px 0;
 }
